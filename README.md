@@ -1,1 +1,1 @@
-# result_educa
+# resulteduca
