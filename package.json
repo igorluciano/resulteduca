@@ -1,9 +1,9 @@
 {
   "scripts": {
     "dev": "next",
-    "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "build": "next build",
+    "prod": "npm run build && npm run start"
   },
   "dependencies": {
     "next": "^14.0.3",
