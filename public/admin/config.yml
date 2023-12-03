@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-logo_url: https://resulteduca.netlify.app/images/logo_result.jpg
+logo_url: https://resulteduca.netlify.app/images/logo.jpg
 display_url: https://resulteduca.netlify.app
 media_folder: public/media
 public_folder: media
