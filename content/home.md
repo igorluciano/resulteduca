@@ -8,6 +8,8 @@ posts:
     content: Content2
   - description: Info3
     content: Content3
+  - description: info4
+    content: content4
 ---
  
 This page is built with NextJS, and content is managed in Decap CMS
