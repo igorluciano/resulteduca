@@ -6,11 +6,11 @@ media_folder: public/media
 public_folder: media
 collections:
   - name: "pages"
-    editor:
-      preview: false
     label: "Pages"
     files:
     - label: "Home page"
+      editor:
+        preview: false
       name: "home"
       file: "content/home.md"
       fields:
