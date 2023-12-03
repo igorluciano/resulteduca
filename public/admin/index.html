@@ -9,7 +9,14 @@
 </head>
 
 <body>
-  <!-- Redirect the user back to the /admin/ pat -->
+  <!-- Adjustment interface -->
+  <script>
+    if (window.netlifyIdentity) {
+      // document.querySelector("section > span").style.visibility = "hidden";
+      document.querySelector("section > span").innerHTML = "Área de conteúdo.";
+    }
+  </script>
+  <!-- Redirect the user back to the /admin/ path -->
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -26,3 +33,4 @@
 </body>
 
 </html>
+document.querySelectorAll('[class^=StyledAuthenticationPage]')
