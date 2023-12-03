@@ -1,14 +1,18 @@
 {
+  "name": "result_educa",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
-    "start": "next start",
+    "dev": "next dev",
+    "prod": "npm run build",
     "build": "next build",
-    "prod": "npm run build"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "^14.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",

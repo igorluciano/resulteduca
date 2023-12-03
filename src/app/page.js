@@ -1,12 +1,10 @@
-import Head from "next/head"
-import { Component } from 'react'
-import { attributes, react as HomeContent } from '../content/home.md'
-
-export default class Home extends Component {
-  render() {
-    let { title, posts } = attributes
-    return (
-      <>
+import Head from "next/head" 
+import { attributes, react as HomeContent } from '../../content/home.md'
+ 
+export default function Home() {
+  let { title, posts } = attributes
+  return (
+    <>
         <Head>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
@@ -23,6 +21,6 @@ export default class Home extends Component {
           </ul>
         </article>
       </>
-    )
-  }
+   
+  )
 }
