@@ -19,3 +19,19 @@ collections:
         - { label: "Content", name: "content", widget: "markdown"}
         - { label: "Button", name: "button", widget: "string"}
         - { label: "BannerImage", name: "banner", widget: "image"}
+    - label: "Resumo sobre a empresa"
+      name: "resumo_sobre_a_empresa"
+      editor:
+        preview: false
+      file: "content/resumo_sobre_a_empresa.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Content", name: "content", widget: "markdown"}
+        - label: 'Serviços'
+          name: "servicos"
+          widget: list
+          fields:
+            - { label: "Icon", name: "icon", widget: "image"}
+            - { label: "Title", name: "content", widget: "string"}
+            - { label: "Description", name: "description", widget: "markdown"}
+            - { label: "Button", name: "button", widget: "image"}
