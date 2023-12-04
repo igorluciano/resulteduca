@@ -31,7 +31,7 @@ collections:
           name: "servicos"
           widget: list
           fields:
-            - { label: "Icon", name: "icon", widget: "image"}
             - { label: "Title", name: "content", widget: "string"}
             - { label: "Description", name: "description", widget: "markdown"}
             - { label: "Button", name: "button", widget: "string"}
+            - { label: "Icon", name: "icon", widget: "image"}
