@@ -6,9 +6,13 @@ public_folder: media
 collections:
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
     - label: "Home"
       name: "home"
+      editor:
+        preview: false
       file: "content/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
