@@ -32,6 +32,6 @@ collections:
           widget: list
           fields:
             - { label: "Title", name: "content", widget: "string"}
+            - { label: "Icon", name: "icon", widget: "image"}
             - { label: "Description", name: "description", widget: "markdown"}
             - { label: "Button", name: "button", widget: "string"}
-            - { label: "Icon", name: "icon", widget: "image"}
