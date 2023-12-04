@@ -2,6 +2,7 @@
 
 import {
   Box,
+  Image,
   Button,
   Drawer,
   DrawerBody,
@@ -12,23 +13,30 @@ import {
   Flex,
   useDisclosure,
 } from "@chakra-ui/react";
+import Options from "./Options";
 
 export default function Header() {
-  const { isOpen, onOpen, onClose } = useDisclosure(); 
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex w="100%" bg="blue" align="center" justify="center">
-      <Flex align="center" justify="space-between" bg="red" w="100%" maxW="1200px">
-        <span>Logo</span>
-        <Box hideFrom="md">
+    <Flex w="100%" align="center" justify="center" boxShadow="lg">
+      <Flex
+        align="center"
+        justify="space-between"
+        width={{ base: "90%", xl: "100%" }}
+        maxW="1200px"
+        h="60px"
+      >
+        <Image src="/logo.svg" alt="Logo" />
+
+        <Box hideFrom="lg">
           <Button onClick={() => onOpen()} m={4}>
             Menu
           </Button>
         </Box>
-        <Flex hideBelow="md" gap={5}>
-          <span>Início</span>
-          <span>Institucional</span>
-          <span>Serviços</span>
+
+        <Flex hideBelow="lg" align="center" gap={5}>
+          <Options />
         </Flex>
       </Flex>
       <>
@@ -36,17 +44,9 @@ export default function Header() {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader> full drawer contents </DrawerHeader>
+            <DrawerHeader></DrawerHeader>
             <DrawerBody>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Consequat nisl vel pretium lectus quam id. Semper quis lectus
-                nulla at volutpat diam ut venenatis. Dolor morbi non arcu risus
-                quis varius quam quisque. Massa ultricies mi quis hendrerit
-                dolor magna eget est lorem. Erat imperdiet sed euismod nisi
-                porta. Lectus vestibulum mattis ullamcorper velit.
-              </p>
+              <Options />
             </DrawerBody>
           </DrawerContent>
         </Drawer>

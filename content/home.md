@@ -1,15 +1,7 @@
 ---
-title: Informação
-date: 2019-03-17T19:31:20.591Z
-posts:
-  - description: Info1
-    content: Content1
-  - description: Info2
-    content: Content2
-  - description: Info3
-    content: Content3
-  - description: info4
-    content: content4
+title: Otimização, Alta performance e transformação de processos
+content: Somos uma empresa na área de gestão e educação, atuando desde 2013 em prol da ransformação de pessoas e impulsionando empresas rumo a excelência.
+button_text: Conhecer mais sobre a Result
 ---
  
-This page is built with NextJS, and content is managed in Decap CMS
+Texto da seção introdução da Result
