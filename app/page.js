@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { Button, Flex, Image, Text } from "@chakra-ui/react";
 import { Footer, Header, Secao } from "./components";
-import { attributes } from '../content/home.md'
+import { attributes } from '../content/resumo_sobre_a_empresa.md'
 
 export const revalidate = 0;
 export default async function Home() {

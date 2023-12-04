@@ -4,18 +4,18 @@ backend:
 media_folder: public/media
 public_folder: media
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "pagina_inicial"
+    label: "Página inicial"
     editor:
       preview: false
     files:
-    - label: "Home"
-      name: "home"
+    - label: "Resumo sobre a empresa"
+      name: "resumo_sobre_a_empresa"
       editor:
         preview: false
-      file: "content/home.md"
+      file: "content/resumo_sobre_a_empresa.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Content", name: "content", widget: "markdown"}
-        - { label: "ButtonText", name: "button_text", widget: "string"}
+        - { label: "Button", name: "button", widget: "string"}
         - { label: "BannerImage", name: "banner", widget: "image"}
