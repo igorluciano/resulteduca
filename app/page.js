@@ -1,9 +1,13 @@
+import Head from "next/head"
 import { Button, Flex, Image, Text } from "@chakra-ui/react";
 import { Footer, Header, Secao } from "./components";
 
 export default async function Home() {
   return (
     <>
+     <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Head>
       <Header />
       <Secao>
         <Flex align="center" justify="space-between" direction={{ base: "column-reverse", lg: "row" }} width={{ base: "90%", xl: "100%" }} maxW="1200px" minH="100px" my="35px">
