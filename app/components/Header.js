@@ -14,6 +14,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Options from "./Options";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -30,8 +31,8 @@ export default function Header() {
         <Image src="/logo.svg" alt="Logo" />
 
         <Box hideFrom="lg">
-          <Button onClick={() => onOpen()} m={4}>
-            Menu
+          <Button onClick={() => onOpen()} m={4} bg="transparent" mr="-15px" _hover={{ bg: 'transparent' }} >
+            <HamburgerIcon boxSize={6} color="#F1592A"  _hover={{ color: '#f57f5a'}}/>
           </Button>
         </Box>
 
