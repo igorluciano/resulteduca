@@ -2,6 +2,7 @@ import Head from "next/head"
 import { Button, Flex, Image, Text } from "@chakra-ui/react";
 import { Footer, Header, Secao } from "./components";
 
+export const revalidate = 0;
 export default async function Home() {
   return (
     <>
