@@ -20,7 +20,7 @@ export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex w="100%" align="center" justify="center" boxShadow="lg">
+    <Flex w="100%" align="center" position="fixed" justify="center" boxShadow="lg" bg="#FFFFFF">
       <Flex
         align="center"
         justify="space-between"
@@ -31,7 +31,7 @@ export default function Header() {
         <Image src="/logo.svg" alt="Logo" />
 
         <Box hideFrom="lg">
-          <Button onClick={() => onOpen()} m={4} bg="transparent" mr="-15px" _hover={{ bg: 'transparent' }} >
+          <Button onClick={() => onOpen()} bg="transparent" mr="-15px" _hover={{ bg: 'transparent' }} >
             <HamburgerIcon boxSize={6} color="#F1592A"  _hover={{ color: '#f57f5a'}}/>
           </Button>
         </Box>
