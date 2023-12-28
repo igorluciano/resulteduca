@@ -5,6 +5,11 @@ import { Footer, Header, Secao, Identity } from "./components";
 import Titulo from "./components/Titulo";
 import Conteudo from "./components/Conteudo";
 import Botao from "./components/Botao";
+import { bannerMaxWidth } from "./providers/chakraUi/theme";
+ 
+import Icone from "./components/Icone";
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import Animate from "./components/Animate";
 
 export const revalidate = 0;
 export default async function Home() {
@@ -18,14 +23,22 @@ export default async function Home() {
       <Header />
       
       <Secao withBackgroundColor withMarginTop direction={{ base: "column", xlg: "row-reverse" }} gap={5} justifyContent="space-between" alignItems="center">
-          <Image alt="Logo" src={banner} h={{ base: "90%",  md: "100%" }} w={{ base: "90%",  md: "520px" }} /> 
-          <Flex direction="column" gap={5}>
-            <Titulo>
-              {title}
-            </Titulo>
-            <Conteudo>{content}</Conteudo>
-            <Botao>{button}</Botao>
-          </Flex>
+          <Animate tipo="pulse">
+            <Image alt="Logo" src={banner} h={{ base: "90%",  md: "100%" }} w={{ base: "90%",  md: bannerMaxWidth }} />
+          </Animate>
+
+          <Animate tipo="slideInLeft">
+            <Flex direction="column" gap={5}>
+              <Titulo>
+                {title}
+              </Titulo>
+              <Conteudo>{content}</Conteudo>
+              <Botao>
+                {button}
+                <Icone as={faAnglesRight} />
+              </Botao>
+            </Flex>
+          </Animate>
       </Secao>
 
       <Footer />

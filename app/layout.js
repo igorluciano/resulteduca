@@ -1,7 +1,11 @@
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import 'animate.css';
+import { Montserrat } from 'next/font/google';
 import "./globals.css";
-import { ChakraUiProvider } from "./providers/chakraUi";
+import { ChakraUiProvider } from "./providers/chakraUi/config";
 
-import { Montserrat } from 'next/font/google'
+config.autoAddCss = false;
 
 const fonte = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],

@@ -20,7 +20,7 @@ export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Flex w="100%" align="center" position="fixed" justify="center" boxShadow="lg" bg="#FFFFFF">
+    <Flex zIndex={1} w="100%" align="center" position="fixed" justify="center" boxShadow="lg" bg="#FFFFFF">
       <Flex
         align="center"
         justify="space-between"
