@@ -24,7 +24,7 @@ export default async function Home() {
       
       <Secao withBackgroundColor withMarginTop direction={{ base: "column", xlg: "row-reverse" }} gap={5} justifyContent="space-between" alignItems="center">
           <Animate tipo="pulse">
-            <Image alt="Logo" src={banner} h={{ base: "90%",  md: "100%" }} w={{ base: "90%",  md: bannerMaxWidth }} />
+            <Image alt="Logo" src={banner} h={{ base: "100%",  md: "100%" }} w={{ base: "100%",  md: bannerMaxWidth }} />
           </Animate>
 
           <Animate tipo="slideInLeft">
