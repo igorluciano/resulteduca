@@ -1,9 +1,6 @@
 ---
 title: Soluções ágeis, inteligentes e alinhadas as melhores práticas!
-content: |-
-  ![](media/child-2x.png)
-
-  Escolha o serviço da **Result** que mais combina com você:
+content: "Escolha o serviço da **Result** que mais combina com você:"
 servicos:
   - content: Mentoria
     description: Conheça estratégias para impulsionar o crescimento do seu negócio
